@@ -1,0 +1,30 @@
+{
+    "name": "searcher-cli",
+    "version": "0.1.0",
+    "description": "simple filetext search command line interface",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dpg5000/searcher-cli.git"
+    },
+    "keywords": [
+        "search",
+        "searching",
+        "searcher",
+        "file",
+        "text",
+        "filename"
+    ],
+    "author": "@dpg5000",
+    "license": "ISC",
+    "preferGlobal": true,
+    "bin": {
+        "searcher": "index.js"
+    },
+    "bugs": {
+        "url": "https://github.com/dpg5000/searcher-cli/issues"
+    },
+    "homepage": "https://github.com/dpg5000/searcher-cli#readme"
+}
