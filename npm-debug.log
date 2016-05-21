@@ -1,0 +1,95 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.14.3
+3 info using node@v4.1.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/air/bloc/code/searcher-cli',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/air/.npm/searcher-cli/0.1.0/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/air/.npm/searcher-cli/0.1.0/package.tgz',
+9 verbose tar pack   '/Users/air/bloc/code/searcher-cli' ]
+10 verbose tarball /Users/air/.npm/searcher-cli/0.1.0/package.tgz
+11 verbose folder /Users/air/bloc/code/searcher-cli
+12 info prepublish searcher-cli@0.1.0
+13 verbose addLocalTarball adding from inside cache /Users/air/.npm/searcher-cli/0.1.0/package.tgz
+14 silly cache afterAdd searcher-cli@0.1.0
+15 verbose afterAdd /Users/air/.npm/searcher-cli/0.1.0/package/package.json not in flight; writing
+16 verbose afterAdd /Users/air/.npm/searcher-cli/0.1.0/package/package.json written
+17 silly publish { name: 'searcher-cli',
+17 silly publish   version: '0.1.0',
+17 silly publish   description: 'simple filetext search command line interface',
+17 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'git+https://github.com/dpg5000/searcher-cli.git' },
+17 silly publish   keywords: [ 'search', 'searching', 'searcher', 'file', 'text', 'filename' ],
+17 silly publish   author: { name: '@dpg5000' },
+17 silly publish   license: 'ISC',
+17 silly publish   preferGlobal: true,
+17 silly publish   bin: { searcher: 'bin/index.js' },
+17 silly publish   bugs: { url: 'https://github.com/dpg5000/searcher-cli/issues' },
+17 silly publish   homepage: 'https://github.com/dpg5000/searcher-cli#readme',
+17 silly publish   readme: '#searcher-cli\n==========\n\nA simple command line interface (cli) that quickly searches all text in files in current directory, then outputs results and and hit context.\n\n## How It Works/What is it?  \nQuickly identify relevant files in directory based on keyword searching.\n\n## Implementation\nInstall via `npm install --global searcher-cli`\n\n**EXAMPLE:**\nUse `searcher` command in console with the desired searchterm as argument.  Colon-delimited results output consists of filename, hit line, and hit context.\n\n\n     $ searcher filename\n     ./README.md:5:searcher searches text in all files in current directory for specified searchterm.\n\n\nWritten by David Goussev (@dpg5000); http://www.github.com/dpg5000\n',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: 'c373b99ef8cc1385096f0190fb59eba5f47d3a76',
+17 silly publish   _id: 'searcher-cli@0.1.0',
+17 silly publish   _shasum: '3476607562ad58e484370eca78d0a66710a9a9ff',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name searcher-cli
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/searcher-cli
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading /Users/air/.npm/searcher-cli/0.1.0/package.tgz
+25 verbose request uri https://registry.npmjs.org/searcher-cli
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 11:28:04 PM
+28 verbose request using bearer token for auth
+29 verbose request id 90830b4aae986720
+30 http request PUT https://registry.npmjs.org/searcher-cli
+31 http 403 https://registry.npmjs.org/searcher-cli
+32 verbose headers { 'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=300',
+32 verbose headers   'content-length': '95',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Sat, 21 May 2016 06:28:04 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-sjc3135-SJC',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1463812084.635436,VS0,VE130',
+32 verbose headers   vary: 'Accept-Encoding' }
+33 verbose request invalidating /Users/air/.npm/registry.npmjs.org/searcher-cli on PUT
+34 error publish Failed PUT 403
+35 verbose stack Error: "You cannot publish over the previously published version 0.1.0." : searcher-cli
+35 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:263:12)
+35 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:251:14)
+35 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:171:14)
+35 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+35 verbose stack     at emitTwo (events.js:87:13)
+35 verbose stack     at Request.emit (events.js:172:7)
+35 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1073:14)
+35 verbose stack     at emitOne (events.js:82:20)
+35 verbose stack     at Request.emit (events.js:169:7)
+35 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1019:12)
+36 verbose statusCode 403
+37 verbose pkgid searcher-cli
+38 verbose cwd /Users/air/bloc/code/searcher-cli
+39 error Darwin 14.3.0
+40 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+41 error node v4.1.0
+42 error npm  v2.14.3
+43 error code E403
+44 error "You cannot publish over the previously published version 0.1.0." : searcher-cli
+45 error If you need help, you may report this error at:
+45 error     <https://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]
